@@ -1,9 +1,18 @@
 body {
+  height: 100vh;
+  background-color: #fcb8d4;
+}
+
+.disclaimer {
+  font-size: 10px;
+  color: "#4c4948";
+  text-align: center;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #fcb8d4;
 }
 
 .gif-container {
