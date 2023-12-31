@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #fcb8d4;
+}
+
+#no-btn {
+  position: absolute;
+  margin-left: 150px;
+  transition: 0.5s;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#yes-btn {
+  position: absolute;
+  margin-right: 150px;
+}
+
+.header-text {
+  display: "block";
+  font-family: "Nunito";
+  font-size: 40px;
+  font-weight: bold;
+  color: "#4c4948";
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.btn {
+  background-color: #4c4948;
+  color: white;
+  padding: 15px 32px;
+  margin: 10px 2px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .btn {
+    font-size: 32px;
+  }
+
+  .header-text {
+    font-size: 60px;
+  }
+}

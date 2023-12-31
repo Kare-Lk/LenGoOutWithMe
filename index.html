@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header-text">Len, quieres salir conmigo :3?</h1>
+      </div>
+      <div class="gif-container">
+        <img
+          width="700px"
+          src="https://www.gifcen.com/wp-content/uploads/2021/12/kuromi-gif-8.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yes-btn" onclick="nextPage()">Sii <3</button>
+        <button
+          class="btn"
+          id="no-btn"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No :c
+        </button>
+        <script>
+          function nextPage() {
+            window.location.href = "yes-view.html";
+          }
+
+          function moveButton() {
+            console.log("moving button...");
+            var x =
+              Math.random() *
+                (window.innerWidth -
+                  document.getElementById("no-btn").offsetWidth) -
+              85;
+            var y =
+              Math.random() *
+                (window.innerHeight -
+                  document.getElementById("no-btn").offsetHeight) -
+              48;
+            console.log("x:", x, "y:", y);
+            document.getElementById("no-btn").style.left = `${x}px`;
+            document.getElementById("no-btn").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
